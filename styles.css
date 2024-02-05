@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
 * {
     margin: 0px;
     padding: 0px;
@@ -21,6 +23,60 @@ body {
 
 body::-webkit-scrollbar {
     display: none;
+}
+
+.linkbutton{
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline:0;
+}
+.linkbutton:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.linkbutton:hover,
+.linkbutton:focus {
+  color:white;
+  text-decoration: none;
+  outline:0;
+}
+
+.linkbutton:active,
+.linkbutton.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.blue{
+  text-shadow: 0px -1px 0px #168be1;
+  color: #ffffff;
+  background-color: #34A9FF;
+  background-image: -moz-linear-gradient(top, #52c7ff,  #168be1);
+  background-image: -ms-linear-gradient(top, #52c7ff, #168be1);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#52c7ff), to(#168be1));
+  background-image: -webkit-linear-gradient(top, #52c7ff, #168be1);
+  background-image: -o-linear-gradient(top, #52c7ff, #168be1);
+  background-image: linear-gradient(top, #52c7ff, #168be1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#52c7ff', endColorstr='#168be1', GradientType=0);
+  border-color: #34A9FF #168be1 #168be1 #34A9FF;
+  border-color: rgba(0, 0, 0, 0.25) rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.25);
 }
 
 .game-holder {
